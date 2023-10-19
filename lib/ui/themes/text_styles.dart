@@ -3,101 +3,109 @@ part of theme;
 /// displayText uses weight - 700, while headingText uses weight - 500. Both have sizes 20, 18, 16
 /// all bodyText uses size - 16, varying weights
 class _AppTextStyles {
-  /// size: 16, weight: 400
+
   static const bodyRegular = TextStyle(
     fontSize: 16,
-    fontFamily: AppFont.dmSansRegular,
+    fontFamily: AppFont.dmSans,
     color: _Colors.black,
+    fontWeight: FontWeight.w400,
   );
 
-  /// size: 16, weight: 500
   static const bodySmall = TextStyle(
     fontSize: 14,
-    fontFamily: AppFont.dmSansRegular,
+    fontFamily: AppFont.dmSans,
     color: _Colors.black,
+    fontWeight: FontWeight.w400,
   );
 
-  /// size: 16, weight: 700
   static const bodyBold = TextStyle(
     fontSize: 16,
-    fontFamily: AppFont.dmSansBold,
+    fontFamily: AppFont.dmSans,
     color: _Colors.black,
+    fontWeight: FontWeight.w700,
   );
 
-  /// size: 16, weight: 400, color: greyLight
   static const bodyCaption = TextStyle(
     fontSize: 16,
-    fontFamily: AppFont.dmSansRegular,
+    fontFamily: AppFont.dmSans,
     color: _Colors.greyLighter,
+    fontWeight: FontWeight.w400,
   );
 
-  /// size: 12, weight: 400
   static const textFieldCaption = TextStyle(
     fontSize: 12,
-    fontFamily: AppFont.dmSansRegular,
+    fontFamily: AppFont.dmSans,
     color: _Colors.greyLighter,
+    fontWeight: FontWeight.w400,
   );
 
   static const textFieldBodyWithAppFont = TextStyle(
     fontSize: 16,
-    fontFamily: AppFont.dmSansRegular,
+    fontFamily: AppFont.dmSans,
     color: _Colors.greyDarker,
+    fontWeight: FontWeight.w400,
   );
 
   static const textFieldBody = TextStyle(
     fontSize: 16,
-    fontFamily: AppFont.dmSansRegular,
+    fontFamily: AppFont.dmSans,
     color: _Colors.greyDarker,
+    fontWeight: FontWeight.w400,
   );
 
   static const buttonText = TextStyle(
-    fontSize: 14,
-    fontFamily: AppFont.dmSansBold,
+    fontSize: 16,
+    fontFamily: AppFont.dmSans,
     color: _Colors.white,
+    fontWeight: FontWeight.w700,
   );
 
-  static const textButtonText = TextStyle(
+  static const buttonTextPurple = TextStyle(
     fontSize: 16,
-    fontFamily: AppFont.dmSansBold,
+    fontFamily: AppFont.dmSans,
     color: _Colors.purple,
+    fontWeight: FontWeight.w700,
   );
 
   static const displayLarge = TextStyle(
     fontSize: 28,
-    fontFamily: AppFont.dmSansBold,
+    fontFamily: AppFont.dmSans,
     color: _Colors.black,
-    fontWeight: FontWeight.bold,
+    fontWeight: FontWeight.w700,
   );
 
   static const displayMedium = TextStyle(
     fontSize: 20,
-    fontFamily: AppFont.dmSansBold,
+    fontFamily: AppFont.dmSans,
     color: _Colors.black,
-    fontWeight: FontWeight.bold,
+    fontWeight: FontWeight.w700,
   );
 
   static const displaySmall = TextStyle(
     fontSize: 16,
-    fontFamily: AppFont.dmSansBold,
+    fontFamily: AppFont.dmSans,
     color: _Colors.black,
-    fontWeight: FontWeight.bold,
+    fontWeight: FontWeight.w700,
   );
 
   static const headingLarge = TextStyle(
     fontSize: 20,
-    fontFamily: AppFont.dmSansMedium,
+    fontFamily: AppFont.dmSans,
     color: _Colors.black,
+    fontWeight: FontWeight.w500,
   );
 
   static const headingMedium = TextStyle(
     fontSize: 18,
-    fontFamily: AppFont.dmSansMedium,
+    fontFamily: AppFont.dmSans,
     color: _Colors.black,
+    fontWeight: FontWeight.w500,
   );
 
   static const headingSmall = TextStyle(
     fontSize: 16,
-    fontFamily: AppFont.dmSansMedium,
+    fontFamily: AppFont.dmSans,
     color: _Colors.black,
+    fontWeight: FontWeight.w500,
   );
 }

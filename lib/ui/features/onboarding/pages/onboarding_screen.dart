@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shutla_v2/core/constants/route_names.dart';
 import 'package:shutla_v2/core/constants/svg_path.dart';
 import 'package:shutla_v2/core/utils/context_extension.dart';
 import 'package:shutla_v2/ui/shared/widgets/dot_indicator.dart';
@@ -37,14 +38,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       description:
           "Our system provides the real time location feed of approaching drivers,"
           "as well as information about their vehicle and estimated time of arrival.",
-      assetPath: SvgPath.userMap,
+      assetPath: SvgPath.mapDark,
     ),
     OnboardingData(
       title: "View Journey History",
       description:
           "You can revisit older trips to get driver information as well as other information"
           " relating to the trip. This is a great way to recover items lost on transit.",
-      assetPath: SvgPath.userMap,
+      assetPath: SvgPath.logs,
     ),
   ];
 
@@ -58,10 +59,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         ),
         actions: [
           TextButton(
-            onPressed: () => controller.nextPage(
-              duration: Duration(milliseconds: 300),
-              curve: Curves.linear,
-            ),
+            onPressed: () => context.pushNamed(RouteNames.loginScreen),
             child: Text("Skip"),
           ),
           const SizedBox(width: 10),
@@ -80,11 +78,34 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     return Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Expanded(child: SvgRenderWidget(svgPath: data.assetPath)),
-                        const SizedBox(height: 40),
-                        Text(data.title, style: context.textTheme.displayLarge),
-                        const SizedBox(height: 30),
-                        Text(data.description),
+                        Spacer(),
+                        ConstrainedBox(
+                          constraints: BoxConstraints(
+                            maxHeight: context.height * 0.33,
+                          ),
+                          child: Stack(
+                            children: [
+                              SvgRenderWidget(svgPath: SvgPath.onboardBg),
+                              Padding(
+                                padding: const EdgeInsets.all(20.0),
+                                child: SvgRenderWidget(svgPath: data.assetPath),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 30.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const SizedBox(height: 40),
+                              Text(data.title,
+                                  style: context.textTheme.displayLarge),
+                              const SizedBox(height: 30),
+                              Text(data.description),
+                            ],
+                          ),
+                        )
                       ],
                     );
                   }).toList(),
@@ -106,10 +127,15 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     );
   }
 
-  moveToNext() => controller.nextPage(
-        duration: Duration(milliseconds: 300),
-        curve: Curves.linear,
-      );
+  moveToNext() {
+    if (controller.page! >= data.length - 1) {
+      context.pushNamed(RouteNames.loginScreen);
+    }
+    return controller.nextPage(
+      duration: Duration(milliseconds: 300),
+      curve: Curves.linear,
+    );
+  }
 
   moveToPrevious() => controller.previousPage(
         duration: Duration(milliseconds: 300),
@@ -129,7 +155,6 @@ class Circle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(3 / currentValue);
     return Stack(
       alignment: Alignment.center,
       children: [

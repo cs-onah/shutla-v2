@@ -56,23 +56,24 @@ ThemeData _buildLightTheme() {
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
+        foregroundColor: _Colors.white,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
         elevation: 0,
         backgroundColor: primaryColor,
         textStyle: _AppTextStyles.buttonText,
-        // padding: EdgeInsets.symmetric(horizontal: 32, vertical: 13.5),
+        padding: EdgeInsets.symmetric(horizontal: 32, vertical: 13.5),
       ),
     ),
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
-        textStyle: _AppTextStyles.textButtonText,
+        textStyle: _AppTextStyles.buttonTextPurple,
       ),
     ),
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(
         side: BorderSide(color: primaryColor, width: 1),
         elevation: 0,
-        textStyle: _AppTextStyles.textButtonText,
+        textStyle: _AppTextStyles.buttonTextPurple,
       ),
     ),
     inputDecorationTheme: InputDecorationTheme(
@@ -84,12 +85,12 @@ ThemeData _buildLightTheme() {
         borderRadius: BorderRadius.circular(8),
         borderSide: BorderSide(color: _Colors.purpleLightest),
       ),
-      isDense: false,
+      isDense: true,
       // filled: true,
       // fillColor: _Colors.white,
       hintStyle: _AppTextStyles.bodyRegular.copyWith(color: _Colors.grey),
     ),
-    fontFamily: AppFont.dmSansRegular,
+    fontFamily: AppFont.dmSans,
     textTheme: const TextTheme(
       bodyLarge: _AppTextStyles.bodyBold,
       bodyMedium: _AppTextStyles.bodyRegular, // default text styling

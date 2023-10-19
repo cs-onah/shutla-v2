@@ -1,4 +1,4 @@
-package com.csonah.shutla_v2.shutla_v2
+package com.csonah.shutla
 
 import io.flutter.embedding.android.FlutterActivity
 

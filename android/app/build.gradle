@@ -43,8 +43,8 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.csonah.shutla_v2.shutla_v2"
-        minSdkVersion flutter.minSdkVersion
+        applicationId "com.csonah.shutla"
+        minSdkVersion 20
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName

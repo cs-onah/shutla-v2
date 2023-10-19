@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shutla_v2/ui/features/onboarding/pages/login_screen.dart';
 import 'package:shutla_v2/ui/features/onboarding/pages/master_screen.dart';
 import 'package:shutla_v2/ui/features/onboarding/pages/splash_screen.dart';
 
@@ -8,6 +9,7 @@ class RouteNames {
 
   static const String splashScreen = 'splashScreen';
   static const String masterScreen = 'masterScreen';
+  static const String loginScreen = 'loginScreen';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -15,6 +17,8 @@ class RouteNames {
         return MaterialPageRoute(builder: (context) => const SplashScreen());
       case masterScreen:
         return MaterialPageRoute(builder: (context) => const MasterScreen());
+      case loginScreen:
+        return MaterialPageRoute(builder: (context) => const LoginScreen());
       default:
         return MaterialPageRoute(
           builder: (context) => errorView(settings.name),
