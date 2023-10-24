@@ -1,16 +1,9 @@
 # shutla_v2
 
-Implementation of a simple Mobile Demand Responsive Transport System
+Implementation of a conceptual Mobile Demand Responsive Transport System
 
 ## Getting Started
+Status: In-progress 🚧
 
-This project is a starting point for a Flutter application.
+PRD: https://docs.google.com/document/d/1qJ1b6vokPsSgSV_lzWw2JhvzaDhWMU8CxAzG1IcIa1g/edit?usp=sharing
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
