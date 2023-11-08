@@ -63,19 +63,21 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyBeaDeIhb4w8fdXmN9AhWZGPDdaS3sBYys',
-    appId: '1:426106152930:ios:f424cae15a31157c153bbb',
+    appId: '1:426106152930:ios:eb8e924349bcce26153bbb',
     messagingSenderId: '426106152930',
     projectId: 'shutla-v2',
     storageBucket: 'shutla-v2.appspot.com',
-    iosBundleId: 'com.csonah.shutla',
+    iosClientId: '426106152930-3nqvlcb28vn0g97sqdh96vrskha7ppar.apps.googleusercontent.com',
+    iosBundleId: 'com.csonah.shutlaV2',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyBeaDeIhb4w8fdXmN9AhWZGPDdaS3sBYys',
-    appId: '1:426106152930:ios:3995e278541f50af153bbb',
+    appId: '1:426106152930:ios:eb8e924349bcce26153bbb',
     messagingSenderId: '426106152930',
     projectId: 'shutla-v2',
     storageBucket: 'shutla-v2.appspot.com',
-    iosBundleId: 'com.csonah.shutlav2.shutlaV2',
+    iosClientId: '426106152930-3nqvlcb28vn0g97sqdh96vrskha7ppar.apps.googleusercontent.com',
+    iosBundleId: 'com.csonah.shutlaV2',
   );
 }
