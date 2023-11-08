@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "426106152930",
+    "project_id": "shutla-v2",
+    "storage_bucket": "shutla-v2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426106152930:android:26f811af9ea91748153bbb",
+        "android_client_info": {
+          "package_name": "com.csonah.shutla"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpWVI4asxHbbx-G_4lzCNLb-NhCBmSV48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
